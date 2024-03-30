@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<br><br>
+<h1 class="text-center mt-5 fw-bold">About Our <br><span style="color: brown;" class="fw-bold">Django Restaurant</span></h1>
+<p class="container mt-5">Welcome to "My Resturent", where culinary excellence meets warm hospitality.
+
+  At "My Resturent", we're passionate about creating memorable dining experiences for our guests. Our talented team of chefs crafts each dish with care, using only the finest and freshest ingredients sourced from local producers whenever possible.
+  
+  Whether you're joining us for a casual lunch, a romantic dinner, or a special celebration, our goal is to exceed your expectations with delicious food and attentive service.
+  
+  But we're more than just a restaurant - we're a part of the community. We believe in giving back and supporting local initiatives whenever we can.
+  
+  Thank you for choosing "My Resturent". We look forward to serving you and making your dining experience truly exceptional.</p>
+
+  <div class="col-lg-15 text-center">
+    <img src="{% static 'kacchi.jpg' %}" alt="Net slow tor " style="max-width: 200px; height: auto; display: block; margin: 0 auto;">
+</div>
+
+
+
+<footer class="bg-dark text-center text-lg-start mt-5">
+    <!-- Copyright -->
+    <div class="text-center p-3  fw-bold" style="background-color: rgba(0, 0, 0, 0.05 ) ;color:white">
+      <h6>© 2024 Copyright | ALL RIGHTS RESERVED</h6>
+      <h6 class="color:white; fw-bold">Shahadat Siddikee Shawon</h6>
+      
+    </div>
+    <!-- Copyright -->
+</footer>
+
+{% endblock content %}

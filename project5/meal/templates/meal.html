@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<h1 class="text-center  pt-5 mt-3"> <span style="color: rgb(111, 0, 0);">OUR MENU </span></h1>
+
+<div class="row container m-auto">
+
+{% for i in meals %}
+
+<div class="col-lg-4 mt-3">
+    <div class="card" style="width: 18rem;">
+        <img src="{{i.strCategoryThumb}}" class="card-img-top" alt="...">
+        <div class="card-body ">
+            <h5 class="card-title text-white">{{i.idCategory}}</h5>
+            <h5 class="card-title text-white">{{i.strCategory}}</h5>
+            <h5 class="card-title text-white">{{i.strCategoryDescription | truncatewords:10 }}</h5>
+        </div>
+    </div>
+</div>
+
+{% endfor %}
+
+</div>
+
+{% endblock %}
